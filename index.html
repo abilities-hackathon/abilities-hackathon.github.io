@@ -3,7 +3,8 @@ layout: home
 ---
 
 {% for panel in site.data.panels %}
-<div class="ui {{panel.background}} row">
+<div id="{{panel.id}}" class="ui {{panel.color}} row"
+     style="background-image: url({{panel.background}})">
     {% include segment.html %}
 </div>
 {% endfor %}

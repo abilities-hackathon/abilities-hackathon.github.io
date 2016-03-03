@@ -1,8 +1,19 @@
-- title: What
-  background: yellow
+- background: /assets/images/abilities_header.png
+  color: yellow
+  id: what
+  title: What
 
-- title: When & Where
-  background: black
+- background:
+  color: black
+  id: why
+  title: Why
 
-- title: Who
-  background: red
+- background:
+  color: red
+  id: when
+  title: When & Where
+
+- background:
+  color: green
+  id: who
+  title: Who
