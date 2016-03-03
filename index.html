@@ -1,0 +1,9 @@
+---
+layout: home
+---
+
+{% for panel in site.data.panels %}
+<div class="ui {{panel.background}} row">
+    {% include segment.html %}
+</div>
+{% endfor %}
