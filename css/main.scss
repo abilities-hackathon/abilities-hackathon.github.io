@@ -8,6 +8,9 @@ body {
 #page-grid {
   height: 100%;
   margin: 0;
+  #header, #header .grid, #header img {
+    padding: 0 !important;
+  }
   #why {
     background-image: url(/assets/images/city.png);
     background-position: 0 0;
