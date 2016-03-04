@@ -1,5 +1,4 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
 body {
@@ -7,14 +6,52 @@ body {
 }
 
 #page-grid {
-  height: 133.333%;
+  height: 100%;
   margin: 0;
+  #why {
+    background-image: url(/assets/images/city.png);
+    background-position: 0 0;
+  }
+  .dots {
+    background: url(/assets/images/dots.png);
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .panel-heading {
+    color: darkred;
+    font-size: 5em;
+    font-family: "Bangers";
+    -webkit-text-stroke: 1px white;
+  }
   .row {
-    padding: 0 2.5em;
     -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 50%;
+    .segment {
+      -webkit-background-size: contain;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .ui.grid {
+      margin: auto !important;
+    }
   }
+  .shadowless,
+  .shadowless > .row > .column,
+  .shadowless > .row {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+.larger {
+  font-size: larger;
 }
 
 ::-webkit-scrollbar-button {
@@ -39,5 +76,5 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(255,255,255,0.75);
+  background: rgba(255, 255, 255, 0.75);
 }
