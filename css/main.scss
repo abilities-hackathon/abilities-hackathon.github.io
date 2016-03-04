@@ -11,7 +11,10 @@ body {
   #header, #header .grid, #header img {
     padding: 0 !important;
   }
-  #why {
+  #header img {
+    margin-bottom: -0.25em;
+  }
+  #why, #who {
     background-image: url(/assets/images/city.png);
     background-position: 0 0;
   }
@@ -21,7 +24,7 @@ body {
     left: 0;
     opacity: 0.3;
     position: absolute;
-    top: 0;
+    //top: 0;
     width: 100%;
   }
   .panel-heading {
@@ -34,7 +37,7 @@ body {
     -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50%;
+    //height: 50%;
     .segment {
       -webkit-background-size: contain;
       background-repeat: no-repeat;
@@ -50,6 +53,9 @@ body {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+  }
+  .ui.secondary.item.menu .item:last-child {
+    margin-right: 0.25em;
   }
 }
 
