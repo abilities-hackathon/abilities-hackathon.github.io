@@ -15,8 +15,17 @@ body {
   #header, #header .grid, #header img {
     padding: 0 !important;
   }
-  #header img {
-    margin-bottom: -0.3em;
+  #header{
+    max-height: 65%;
+    svg {
+      height: 100%;
+      margin-bottom: -10%;
+      padding: 0;
+      width: 100%;
+    }
+    img {
+      margin-bottom: -0.3em;
+    }
   }
   #who {
     background-image: url('/assets/images/sunburst.png');
@@ -55,6 +64,7 @@ body {
     }
     .ui.grid {
       margin: auto !important;
+      padding: 5em 0;
     }
   }
   .shadowless,
