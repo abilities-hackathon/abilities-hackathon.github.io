@@ -25,8 +25,18 @@ $(document).ready(function () {
             //.addIndicators()
             .addTo(controller);
 
+        new ScrollMagic.Scene({triggerElement: "#sponsors"})
+            .setTween("#sponsors > div", {y: "1%", ease: Linear.easeNone})
+            //.addIndicators()
+            .addTo(controller);
+
         new ScrollMagic.Scene({triggerElement: "#who"})
-            .setTween("#who > div", {y: "80%", ease: Linear.easeNone})
+            .setTween("#who > div", {y: "1%", ease: Linear.easeNone})
+            //.addIndicators()
+            .addTo(controller);
+
+        new ScrollMagic.Scene({triggerElement: "#footer"})
+            .setTween("#footer > div", {y: "80%", ease: Linear.easeNone})
             //.addIndicators()
             .addTo(controller);
     }

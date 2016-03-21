@@ -8,15 +8,25 @@ body {
 #page-grid {
   height: 100%;
   margin: 0;
+  #footer, #why {
+    background-image: url(/assets/images/city.png);
+    background-position: 0 0;
+  }
   #header, #header .grid, #header img {
     padding: 0 !important;
   }
   #header img {
-    margin-bottom: -0.25em;
+    margin-bottom: -0.3em;
   }
-  #why, #who {
-    background-image: url(/assets/images/city.png);
-    background-position: 0 0;
+  #who {
+    background-image: url('/assets/images/sunburst.png');
+    padding-bottom: 2em;
+    .team-photo {
+      -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+      clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+      height: 5em;
+    }
   }
   .dots {
     background: url(/assets/images/dots.png);
@@ -37,7 +47,7 @@ body {
     -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
-    //height: 50%;
+    overflow: hidden;
     .segment {
       -webkit-background-size: contain;
       background-repeat: no-repeat;
