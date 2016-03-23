@@ -1,5 +1,7 @@
 ---
 ---
+$comic-book-font: "Bangers", "Lato", serif;
+
 body {
   background: black;
 }
@@ -45,10 +47,13 @@ path#burst {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    .comic-book-font {
+      font-family: $comic-book-font;
+    }
     .panel-heading {
       color: darkred;
       font-size: 5em;
-      font-family: "Bangers";
+      font-family: $comic-book-font;
       -webkit-text-stroke: 1px white;
     }
     .segment {
@@ -74,15 +79,6 @@ path#burst {
 }
 
 /** Comic Book Classes: */
-.dots {
-  background: url(/assets/images/dots.png);
-  height: 100%;
-  left: 0;
-  opacity: 0.3;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
 .comic-book {
   .panel-down {
     -webkit-clip-path: polygon(1% 1%, 99% 5%, 99% 99%, 1% 95%);
@@ -100,6 +96,15 @@ path#burst {
     -webkit-clip-path: polygon(1% 5%, 99% 1%, 99% 95%, 1% 99%);
     clip-path: polygon(1% 5%, 99% 1%, 99% 95%, 1% 99%);
   }
+}
+.dots {
+  background: url(/assets/images/dots.png);
+  height: 100%;
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .larger {
