@@ -1,8 +1,11 @@
 ---
 ---
-
 body {
   background: black;
+}
+
+path#burst {
+  transform-origin: center;
 }
 
 #page-grid {
@@ -15,7 +18,7 @@ body {
   #header, #header .grid {
     padding: 0 !important;
   }
-  #header{
+  #header {
     max-height: 65%;
     svg {
       height: 100%;
@@ -34,26 +37,20 @@ body {
       height: 5em;
     }
   }
-  .dots {
-    background: url(/assets/images/dots.png);
-    height: 100%;
-    left: 0;
-    opacity: 0.3;
-    max-height: 65%;
-    position: absolute;
-    width: 100%;
-  }
-  .panel-heading {
-    color: darkred;
-    font-size: 5em;
-    font-family: "Bangers";
-    -webkit-text-stroke: 1px white;
+  > .row {
+    padding: 0;
   }
   .row {
     -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    .panel-heading {
+      color: darkred;
+      font-size: 5em;
+      font-family: "Bangers";
+      -webkit-text-stroke: 1px white;
+    }
     .segment {
       -webkit-background-size: contain;
       background-repeat: no-repeat;
@@ -76,10 +73,40 @@ body {
   }
 }
 
+/** Comic Book Classes: */
+.dots {
+  background: url(/assets/images/dots.png);
+  height: 100%;
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.comic-book {
+  .panel-down {
+    -webkit-clip-path: polygon(1% 1%, 99% 5%, 99% 99%, 1% 95%);
+    clip-path: polygon(1% 1%, 99% 5%, 99% 99%, 1% 95%);
+  }
+  .panel-left {
+    -webkit-clip-path: polygon(1% 1%, 95% 1%, 99% 99%, 5% 99%);
+    clip-path: polygon(1% 1%, 95% 1%, 99% 99%, 5% 99%);
+  }
+  .panel-right {
+    -webkit-clip-path: polygon(7% 1%, 100% 1%, 94% 99%, 1% 99%);
+    clip-path: polygon(7% 1%, 100% 1%, 94% 99%, 1% 99%);
+  }
+  .panel-up {
+    -webkit-clip-path: polygon(1% 5%, 99% 1%, 99% 95%, 1% 99%);
+    clip-path: polygon(1% 5%, 99% 1%, 99% 95%, 1% 99%);
+  }
+}
+
 .larger {
   font-size: larger;
 }
 
+/** Scrollbar Styling: */
 ::-webkit-scrollbar-button {
 }
 
