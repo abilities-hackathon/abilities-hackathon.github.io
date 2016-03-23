@@ -25,11 +25,11 @@ $(document).ready(function () {
             .addTo(controller);
 
         new ScrollMagic.Scene({triggerElement: "#what"})
-            .setTween("#what > div", {y: "80%", ease: Linear.easeNone})
+            .setTween("#what > div", {x: "20%", ease: Linear.easeNone})
             .addTo(controller);
 
         new ScrollMagic.Scene({triggerElement: "#sponsors"})
-            .setTween("#sponsors > div", {y: "5%", ease: Linear.easeNone})
+            .setTween("#sponsors > div", {x: "-10%", ease: Linear.easeNone})
             .addTo(controller);
 
         new ScrollMagic.Scene({triggerElement: "#who"})

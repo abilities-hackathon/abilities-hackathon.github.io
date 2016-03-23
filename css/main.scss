@@ -110,6 +110,10 @@ path#burst {
 .larger {
   font-size: larger;
 }
+.nervous:hover {
+  opacity: 0.9;
+  transform: rotateY(10deg);
+}
 
 /** Scrollbar Styling: */
 ::-webkit-scrollbar-button {
