@@ -3,14 +3,15 @@
 
 # Site settings
 title: Abilities Hack
-email: abilities@betamore.com
-description: > # Digital Harbor hosts the Abilities Hackathon to engage the tech community
+email: abilities.hackathon@gmail.com
+description: >
+ Digital Harbor Foundation hosts the Abilities Hackathon to engage the tech community
  in human centered design practices for individuals with needs related to their impacted
  abilities.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://thebadh.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://abilitieshackathon.com/" # the base hostname & protocol for your site
+twitter_username: AbilitiesHack
+github_username:  abilities-hackathon
 
 # Build settings
 markdown: kramdown
