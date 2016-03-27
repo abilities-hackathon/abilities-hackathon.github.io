@@ -9,7 +9,7 @@ description: >
  in human centered design practices for individuals with needs related to their impacted
  abilities.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://abilitieshackathon.com/" # the base hostname & protocol for your site
+url: "http://abilitieshackathon.com" # the base hostname & protocol for your site
 twitter_username: AbilitiesHack
 github_username:  abilities-hackathon
 
