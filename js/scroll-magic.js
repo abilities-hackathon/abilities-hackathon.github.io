@@ -50,6 +50,7 @@ $(document).ready(function () {
         $el.css("stroke-dashoffset", lineLength);
     }
 
+    /** SVG Paths for Animation: */
     var $abilities = $("path#abilities");
     var $bubble = $("path#bubble");
     var $burst = $("path#burst");
@@ -58,10 +59,8 @@ $(document).ready(function () {
     var $screen = $("path#phone-screen");
     var $skyline = $('path#skyline');
 
-    // prepare SVG
     pathPrepare($bubble);
 
-    // build tween
     var tween = new TimelineMax()
         .add(TweenMax.to($bubble, 0.1, {strokeDashoffset: 0, ease: Linear.easeNone}))
         .add(TweenMax.to($bubble, 0.9, {fill: 'red', ease: Linear.easeNone}))
@@ -69,11 +68,25 @@ $(document).ready(function () {
         .add(TweenMax.to($skyline, 0.7, {fill: "#fff", ease: Linear.easeNone}), 0)
         .add(TweenMax.to("path", 0.5, {transform: 'scale(1.4)', ease: Linear.easeNone}), 0);
 
-    // build scene
-    var scene = new ScrollMagic.Scene({
+    new ScrollMagic.Scene({
         triggerElement: "#header",
-        tweenChanges: true})
+        tweenChanges: true
+    })
         .setTween(tween)
-        //.addIndicators() // add indicators (requires plugin)
         .addTo(controller);
+
+    /** Setup navigation bar updating: */
+    /*var sections = ["why", "what", "sponsors", "who"];
+
+    for (var index in sections) {
+        var section = sections[index],
+            selector = "#navigation-" + section;
+
+        new ScrollMagic.Scene({
+            triggerElement: "#" + section
+        })
+            .addIndicators()
+            .setClassToggle(selector, 'active')
+            .addTo(controller);
+    }*/
 });

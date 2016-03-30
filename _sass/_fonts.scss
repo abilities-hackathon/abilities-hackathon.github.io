@@ -1,0 +1,20 @@
+﻿@font-face {
+  font-family: "Comic Book";
+  src: url("/assets/fonts/COMIC_BO.eot?") format("eot"), url("/assets/fonts/COMIC_BO.woff") format("woff"), url("/assets/fonts/COMIC_BO.ttf") format("truetype"), url("/assets/fonts/COMIC_BO.svg#ComicBookNormal") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Comic Book";
+  src: url("/assets/fonts/Comic_Book_Bold.eot?") format("eot"), url("/assets/fonts/Comic_Book_Bold.woff") format("woff"), url("/assets/fonts/Comic_Book_Bold.ttf") format("truetype"), url("/assets/fonts/Comic_Book_Bold.svg#ComicBook-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Comic Book";
+  src: url("/assets/fonts/Comic_Book_Bold_Italic.eot?") format("eot"), url("/assets/fonts/Comic_Book_Bold_Italic.woff") format("woff"), url("/assets/fonts/Comic_Book_Bold_Italic.ttf") format("truetype"), url("/assets/fonts/Comic_Book_Bold_Italic.svg#ComicBook-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
