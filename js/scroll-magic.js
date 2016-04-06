@@ -75,18 +75,35 @@ $(document).ready(function () {
         .setTween(tween)
         .addTo(controller);
 
+    controller.scrollTo(function (target) {
+        TweenMax.to(window, 1, {
+            scrollTo: {
+                y: target,
+                autoKill: true
+            },
+            ease: Cubic.easeInOut
+        });
+    });
+
+    goTo = function (selector) {
+        var target = $(selector).position().top;
+        controller.scrollTo(target);
+    };
+    
+    document.getElementById('navigation').controller = controller;
+
     /** Setup navigation bar updating: */
     /*var sections = ["why", "what", "sponsors", "who"];
 
-    for (var index in sections) {
-        var section = sections[index],
-            selector = "#navigation-" + section;
+     for (var index in sections) {
+     var section = sections[index],
+     selector = "#navigation-" + section;
 
-        new ScrollMagic.Scene({
-            triggerElement: "#" + section
-        })
-            .addIndicators()
-            .setClassToggle(selector, 'active')
-            .addTo(controller);
-    }*/
+     new ScrollMagic.Scene({
+     triggerElement: "#" + section
+     })
+     .addIndicators()
+     .setClassToggle(selector, 'active')
+     .addTo(controller);
+     }*/
 });
